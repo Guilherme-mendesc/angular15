@@ -12,12 +12,23 @@ export class DataBindingComponent implements OnInit {
   public maisUm: number= 1;
 
   public checkedDisabled: boolean = false;
-  public imgSrc: string ="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/800px-Unofficial_JavaScript_logo_2.svg.png";
+  public imgSrc: string ="";
   public imgTitle: string="Property Binding";
+
+  public position: {x: number, y: number } ={x: 0, y: 0};
   constructor(){ }
 
   ngOnInit(): void {
-    
+  }
+
+  public alertaInfo(valor: MouseEvent){
+    console.log(valor);
+  }
+
+  public mouseMoveTeste(valorMouse: MouseEvent){
+    console.log(valorMouse);
+    this.position.x= valorMouse.offsetX;
+    this.position.y= valorMouse.offsetY;
   }
 
 }
