@@ -20,5 +20,21 @@
     [ {{i}} ] - {{item.nome}} - {{item.idade}}
 </li>
 </ul>
-<button (click)="onClickAddList()">add
-</button>
+<button (click)="onClickAddList()">add</button>
+
+<hr>
+<hr>
+
+<input type="text" [(ngModel)]="nome">
+<div [ngSwitch]="'nome'" >
+    <p *ngSwitchCase="'Guilherme'">
+        Guilherme
+    </p>
+    <p *ngSwitchCase="'Nay'">
+        Sunas</p>
+
+        <p *ngSwitchDefault>
+            falhou</p>
+</div>
+
+

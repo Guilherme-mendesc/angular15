@@ -14,6 +14,8 @@ export class DiretivasEstruturaisComponent implements OnInit {
     { nome: "Laylon Gilson", idade: 25},
     { nome: "Jose Sarney", idade: 99 }
   ];
+
+  public nome: string ='Guilherme';
   constructor(){
   }
 
@@ -45,5 +47,7 @@ export class DiretivasEstruturaisComponent implements OnInit {
     
     this.list.splice(event, 1);
   }
+
+
 
 }
