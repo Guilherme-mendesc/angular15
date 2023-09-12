@@ -6,6 +6,7 @@ import { OutletContext } from '@angular/router';
   template: `
   <app-data-binding></app-data-binding>
   <app-diretivas-estruturais></app-diretivas-estruturais>
+  <app-diretivas-atributos></app-diretivas-atributos>
   <router-outlet></router-outlet>`
 
 
