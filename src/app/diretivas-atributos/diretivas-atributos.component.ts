@@ -12,7 +12,9 @@ export class DiretivasAtributosComponent implements OnInit{
   public backGroundColor: string = "red";
 
   public nome: string ="";
-  public list: Array<{ nome: string }> = [];
+  public list: Array<{ nome: string }> = [{nome: "Guilherme Mendes"}];
+
+  public date: Date = new Date();
   constructor() {}
 
   ngOnInit(): void {
