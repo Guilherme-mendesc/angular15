@@ -5,7 +5,8 @@ import { OutletContext } from '@angular/router';
   selector: 'app-root',
   template: `
   <app-data-binding></app-data-binding>
-  <app-diretivas-estruturais></app-diretivas-estruturais>
+
+  <!-- <app-diretivas-estruturais></app-diretivas-estruturais> -->
 
   <!-- <app-diretivas-atributos>
   <h1>Aulas de Diretivas Atributo</h1>
@@ -17,17 +18,30 @@ import { OutletContext } from '@angular/router';
   <h3>Nicaragua Toboga</h3>
   </app-diretivas-atributos> -->
 
-  <app-diretivas-atributos>
-    
+  <!-- <app-diretivas-atributos> -->
+  
+<!-- 
+  <app-new-component></app-new-component> -->
 
+  <app-input [contador]="addValue"> </app-input>
+  <br>
+  <button (click)="add()"> ADD </button>
 
-  <app-new-component></app-new-component>
   <router-outlet></router-outlet>`
-
 
 
 })
 export class AppComponent implements OnInit {
+
+  public destruir: boolean = true;
+
+  public addValue: number = 0;
+
+  public add(){
+    this.addValue += 1;
+  }
+
+
 
   constructor(){
   }
