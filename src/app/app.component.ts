@@ -17,7 +17,11 @@ import { OutletContext } from '@angular/router';
   <h3>Nicaragua Toboga</h3>
   </app-diretivas-atributos> -->
 
+  <app-diretivas-atributos>
+    
 
+
+  <app-new-component></app-new-component>
   <router-outlet></router-outlet>`
 
 
